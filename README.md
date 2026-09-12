@@ -5,7 +5,7 @@ Fictional wood-fired Neapolitan pizzeria landing page — a portfolio project.
 Warm dark UI, gold accents, bilingual copy (EN / UA), and a cartoon mascot. Built as a marketing site: menu, deals, reviews, and a callback form (UI only, no backend).
 
 <p align="center">
-  <a href="https://pizza-landing.vercel.app">
+  <a href="https://pizza-landing-henna.vercel.app">
     <img src="https://img.shields.io/badge/Live_Demo-Open_the_site-f5a623?style=for-the-badge&labelColor=1a1008" alt="Live Demo" />
   </a>
 </p>
