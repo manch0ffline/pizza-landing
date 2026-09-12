@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PAZZO
 
-## Getting Started
+Fictional wood-fired Neapolitan pizzeria landing page — a portfolio project.
 
-First, run the development server:
+Warm dark UI, gold accents, bilingual copy (EN / UA), and a cartoon mascot. Built as a marketing site: menu, deals, reviews, and a callback form (UI only, no backend).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<p align="center">
+  <a href="https://pizza-landing.vercel.app">
+    <img src="https://img.shields.io/badge/Live_Demo-Open_the_site-f5a623?style=for-the-badge&labelColor=1a1008" alt="Live Demo" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="public/mascot-hero.png" alt="PAZZO pizza mascot" width="280" />
+</p>
+
+> If the demo URL 404s after you deploy, replace `https://pizza-landing.vercel.app` in this README with your Vercel (or other) URL.
+
+---
+
+## What’s on the page
+
+- **Hero** — headline, CTAs, mascot (tablet & desktop)
+- **About** — story from 2019 + timeline
+- **Why PAZZO** — oven, 48h dough, delivery, late hours
+- **Menu** — six 12″ signature pies
+- **Deals** — promo codes you can copy
+- **Reviews** — guest quotes
+- **Order** — contacts + callback form (front-end demo)
+- **i18n** — English / Ukrainian, remembered in `localStorage`
+- **Theme** — dark (default) and light
+
+## Stack
+
+| | |
+|---|---|
+| Framework | [Next.js](https://nextjs.org) 16 (App Router) |
+| UI | React 19, Tailwind CSS 4 |
+| Motion | Framer Motion |
+| Icons | Lucide |
+| Font | Nunito (`next/font`) |
+
+## Project structure
+
+```
+src/
+  app/           # layout, global styles, home page
+  components/    # sections and UI (navbar, hero, menu, …)
+  i18n/          # dictionaries + language context
+  theme/         # dark / light theme context
+public/
+  mascot-hero.png
+  mascot-about.png
+  menu/          # product photos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+```bash
+npm run lint    # ESLint
+npm run build   # production build
+npm start       # serve the build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Fictional brand. Address, phone, and reviews are demo content.
+- The order form only shows a success state in the browser — nothing is sent to a server.
+- Language and theme persist in `localStorage` (`pazzo-locale`, `pazzo-theme`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Personal portfolio piece. Use as a reference if you want; the PAZZO name and copy are made up for this demo.
+# pizza-landing
