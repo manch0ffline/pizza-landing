@@ -14,8 +14,6 @@ Warm dark UI, gold accents, bilingual copy (EN / UA), and a cartoon mascot. Buil
   <img src="public/mascot-hero.png" alt="PAZZO pizza mascot" width="280" />
 </p>
 
-> If the demo URL 404s after you deploy, replace `https://pizza-landing.vercel.app` in this README with your Vercel (or other) URL.
-
 ---
 
 ## What’s on the page
